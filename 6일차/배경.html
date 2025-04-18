@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box{
+            width: 1000px;
+            height: 600px;
+            background-color: rgb(200, 255, 145);
+            /* =>배경색 지정 */
+
+            background-image: url(https://media.4-paws.org/d/2/5/f/d25ff020556e4b5eae747c55576f3b50886c0b90/cut%20cat%20serhio%2002-1813x1811-720x719.jpg);
+            /* =>배경 이미지를 불러옴 
+            =>배경 이미지는 기본적으로 반복함 */
+
+            background-repeat: no-repeat;
+            /* =>이미지 반복 안함 */
+
+            /* background-size: 200px 300px; */
+            /* =>이미지 크기 조절 x, y 가로 세로로 구분하여 적용 가능 */
+
+            /* background-size: 100%;
+            =>배경 이미지 크기를 % 값으로 조절 가능 */
+
+            background-size: contain;
+            /* =>cover: 이미지를 비율에 맞춰 가득 채우지만 잘려나가는 부분이 있음
+            =>contain: 이미지를 비율에 맞춰 가득 채우지만 비어있는 영역이 생길 수 있음 */
+
+            background-position: center;
+            /* =>이미지 위치 조절 
+            =>x, y축 따로 값을 입력하여 지정 가능 
+            =>top, left, right, bottom ,center를 지정하여
+            원하는 위치에 배치할 수 있음  */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+
+</body>
+</html>

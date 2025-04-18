@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul,li{
+            list-style: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .header{
+            padding: 30px 120px;
+            height: 95px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .logo{
+            float: left;
+        }
+
+        .menu_wrap{
+            float: right;
+            margin-top: 5px;
+        }
+
+        .menu{
+            margin-left:100px;
+            float: left;
+        }
+
+        .section{
+            width: 98%;
+            background-color: lightgray;
+            height: 850px;
+            margin: 0 auto;
+            /* border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 100px;
+            border-bottom-left-radius: 15px; */
+            border-radius: 15px 15px 100px 15px;
+            /* =>시계방향으로 축약 가능 */
+
+            background-image: url(https://www.stcube.com/images/main/main_visual3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 320px 170px;
+            color: white;
+        }
+        
+        .line{
+            width: 80px;
+            height: 2px;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .title{
+            font-size: 80px;
+        }
+
+        .sub_title{
+            font-size: 30px;
+            font-weight: 100;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="header">
+
+        <div class="logo">
+            <a href="#">
+                <img src="https://www.stcube.com/images/common/logo.png" alt="logo">
+            </a>
+        </div>
+
+        <ul class="menu_wrap">
+            <li class="menu">
+                <a href="#">About Us</a>
+            </li>
+            <li class="menu">
+                <a href="#">Nelmastobart</a>
+            </li>
+            <li class="menu">
+                <a href="#">R&D</a>
+            </li>
+            <li class="menu">
+                <a href="#">IR</a>
+            </li>
+            <li class="menu">
+                <a href="#">PR</a>
+            </li>
+            <li class="menu">
+                <a href="#">Careers</a>
+            </li>
+            <li class="menu">
+                <a href="#">Partnership</a>
+            </li>
+        </ul>
+
+    </div>
+    <!-- header end -->
+
+    <div class="section">
+        <div class="line"></div>
+        <h2 class="title">
+            Precision-Driven <br>
+            Immuno-Oncology:
+        </h2>
+        <p class="sub_title">
+			Targeting Novel Immune Checkpoints to Unlock Anti-Cancer Immunity
+        </p>
+    </div>
+
+</body>
+</html>

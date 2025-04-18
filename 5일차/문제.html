@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* *문제 
+        =>클래스를 사용하여 엘리먼트 제작 
+        =>엘리먼트의 크기 300 * 500
+        =>10px 파란색 점선으로 제작 (색상은 16진수 표현)
+        =>글자 좌우: 오른쪽, 
+        글자 상하: 가운데 
+        =>글자 크기는 60 / 두껍게 / 기울기 / 밑줄 
+        =>50% 투명도가 들어간 빨간 글자로 표현 
+        =>글자체는 나눔고딕  */
+
+        .box{
+            width: 300px;
+            height: 500px;
+            border-color: #00f;
+            border-width: 10px;
+            border-style: dashed;
+            text-align: right;
+            line-height: 500px;
+            font-size: 60px;
+            font-weight: 900;
+            font-style: italic;
+            text-decoration: underline;
+            color: rgba(255, 0, 0, 0.5);
+            font-family: "나눔고딕";
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="box">TEXT</div>
+    
+</body>
+</html>

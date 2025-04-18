@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블랙야크 클론</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+            color: #1d1d1d;
+        }
+
+        ul,li{
+            list-style: none;
+        }
+
+        img{
+            width: 100%;
+            display: block;
+        }
+
+        /* reset end */
+
+        section{
+            padding: 75px 210px;
+        }
+        
+        .title{
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+        /* common end */
+
+        header{
+            width: 100%;
+            height: 160px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        header a{
+            color: white;
+        }
+
+        .in_header{
+            width: 1500px;
+            height: 50%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .logo{
+            width: 150px;
+            float: left;
+        }
+
+        .login_wrap{
+            float: right;
+            margin-top: 10px;
+        }
+
+        .login_wrap li{
+            float: left;
+            font-weight: 900;
+            margin-left: 25px;
+            font-size: 14px;
+        }
+
+        .menu_wrap{
+            float: left;
+        }
+
+        .menu_wrap li{
+            margin-right: 40px;
+            float: left;
+        }
+
+        .menu_wrap li:last-child{
+            position: relative;
+        }
+
+        .red_point{
+            width: 4px;
+            height: 4px;
+            background-color: orangered;
+            border-radius: 50%;
+            position: absolute;
+            right: -7px;
+            top: 5px;
+        }
+
+        .event_wrap{
+            float: right;
+        }
+
+        .event_wrap li{
+            float: left;
+            margin-left: 45px;
+        }
+        /* header end */
+
+        .section_1{
+            height: 980px;
+            background-color: gray;
+            padding-top: 350px;
+            background-image: url(https://cdn.byn.kr/real/_data/banner/afe15ebe9f49c0a55d05c461f68f5e4b.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .section_1{
+            color: white;
+        }
+
+        .section_1 h3{
+            font-size: 65px;
+            font-weight: 900;
+            line-height: 80px;
+        }
+
+        .section_1 p{
+            font-size: 22px;
+            margin-top: 30px;
+        }
+
+        .section_2{
+            height: 645px;
+        }
+
+        .con_2{
+            width: 356.25px;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .con_2:last-child{
+            margin-right: 0;
+        }
+
+        .con_2 h4{
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .con_2 p{
+            font-size: 18px;
+            font-weight: 900;
+            margin-top: 5px;
+        }
+        /* section_2 end */
+
+        .section_3{
+            height: 940px;
+        }
+
+        .con_3{
+            width: 481.66666px;
+            height: 700px;
+            background-color: lightgray;
+            float: left;
+            margin-right: 20px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .con_3_1{
+            background-image: url(https://cdn.byn.kr/real/_data/banner/85a48bb26705b15bbb04f65d04b40f7d.jpg);
+        }
+
+        .con_3_2{
+            background-image: url(https://cdn.byn.kr/real/_data/banner/7f6d667505549317bce43622e5ff947e.jpg);
+        }
+
+        .con_3_3{
+            background-image: url(https://cdn.byn.kr/real/_data/banner/7ec21c7b47f773891d3dc54bafd05dcd.jpg);
+            margin-right: 0;
+        }
+
+        .con_3 a{
+            width: 100%;
+            color: white;
+            display: block;
+            text-align: center;
+            position: absolute;
+            bottom: 70px;
+            left: 0;
+        }
+
+        /* .con_3 h4{
+            margin-top: 550px;
+            font-size: 30px;
+            font-weight: 900;
+            text-align: center;
+        }
+
+        .con_3 p{
+            margin-top: 5px;
+            text-align: center;
+        } */
+
+        .con_wrap_4{
+            height: 300px;
+            /* background-color: lightgray; */
+        }
+
+        .top_con_wrap{
+            margin-bottom: 20px;
+        }
+
+        .con_4{
+            width: 239.16666px;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .con_4:last-child{
+            margin-right: 0;
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="wrap">
+
+        <header>
+
+            <div class="in_header">
+                <div class="logo">
+                    <a href="#">
+                        <img src="https://www.byn.kr/_skin/sw_kor_bcc/img/common/BlackyakBI-white.svg" alt="logo">
+                    </a>
+                </div>
+
+                <ul class="login_wrap">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">장바구니</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </div>
+
+            <div class="in_header">
+                
+                <ul class="menu_wrap">
+                    <li><a href="#">BEST</a></li>
+                    <li><a href="#">NEW</a></li>
+                    <li><a href="#">MAN</a></li>
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">SHOES</a></li>
+                    <li><a href="#">EQUIPMENT</a></li>
+                    <li>
+                        <a href="#">DNS</a>
+                        <div class="red_point"></div>
+                    </li>
+                </ul>
+
+                <ul class="event_wrap">
+                    <li><a href="#">EVENT</a></li>
+                    <li><a href="#">OUTLET</a></li>
+                </ul>
+
+            </div>
+
+        </header>
+        <!-- header end -->
+
+        <section class="section_1">
+            <h3>
+                343 라이트 스텝<br>
+                4만원 금액할인!
+            </h3>
+
+            <p>
+                고어텍스 관리 키트 사은품 증정<br>
+                330g 초경량과 풍부한 쿠셔닝을 경험하세요.
+            </p>
+        </section>
+        <!-- section_1 end -->
+
+        <section class="section_2">
+
+            <h3 class="title">WEEKLY BEST ITEM</h3>
+            <div class="con_2">
+                <a href="#">
+                    <img src="https://picweb.blackyak.com/workbook/2025_BY/ABYSHXU927_GR/ABYSHXU927_GR_WMain_view_860_FRONT.jpg" alt="제품">
+                    <h4>343 라이트 스텝 GTX</h4>
+                    <p>219,000</p>
+                </a>
+            </div>
+
+            <div class="con_2">
+                <a href="#">
+                    <img src="https://picweb.blackyak.com/workbook/2025_BY/ABYSHXU927_GR/ABYSHXU927_GR_WMain_view_860_FRONT.jpg" alt="제품">
+                    <h4>343 라이트 스텝 GTX</h4>
+                    <p>219,000</p>
+                </a>
+            </div>
+
+            <div class="con_2">
+                <a href="#">
+                    <img src="https://picweb.blackyak.com/workbook/2025_BY/ABYSHXU927_GR/ABYSHXU927_GR_WMain_view_860_FRONT.jpg" alt="제품">
+                    <h4>343 라이트 스텝 GTX</h4>
+                    <p>219,000</p>
+                </a>
+            </div>
+
+            <div class="con_2">
+                <a href="#">
+                    <img src="https://picweb.blackyak.com/workbook/2025_BY/ABYSHXU927_GR/ABYSHXU927_GR_WMain_view_860_FRONT.jpg" alt="제품">
+                    <h4>343 라이트 스텝 GTX</h4>
+                    <p>219,000</p>
+                </a>
+            </div>
+
+        </section>
+        <!-- section_2 end -->
+
+        <section class="section_3">
+
+            <h3 class="title">NOW TRENDING</h3>
+
+            <div class="con_3 con_3_1">
+                <a href="#">
+                    <h4>AWC 자켓</h4>
+                    <p>DISCOVER MORE ></p>
+                </a>
+            </div>
+            
+            <div class="con_3 con_3_2">
+                <a href="#">
+                    <h4>AWC 자켓</h4>
+                    <p>DISCOVER MORE ></p>
+                </a>
+            </div>
+
+            <div class="con_3 con_3_3">
+                <a href="#">
+                    <h4>AWC 자켓</h4>
+                    <p>DISCOVER MORE ></p>
+                </a>
+            </div>
+
+        </section>
+        <!-- section_3 end -->
+
+        <section class="section_4">
+
+            <h3 class="title">고객님을 위한 추천 상품</h3>
+
+            <div class="con_wrap_4 top_con_wrap">
+
+                <div class="con_4">
+                    <a href="#">
+                        <img src="https://picweb.blackyak.com/workbook/2025_BY/ABYSHXU927_GR/ABYSHXU927_GR_WMain_view_860_FRONT.jpg" alt="제품">
+                        <h4>343 라이트 스텝 GTX</h4>
+                        <p>219,000</p>
+                    </a>
+                </div>
+
+                <div class="con_4">
+                    <a href="#">
+                        <img src="https://picweb.blackyak.com/workbook/2025_BY/ABYSHXU927_GR/ABYSHXU927_GR_WMain_view_860_FRONT.jpg" alt="제품">
+                        <h4>343 라이트 스텝 GTX</h4>
+                        <p>219,000</p>
+                    </a>
+                </div>
+
+                <div class="con_4">
+                    <a href="#">
+                        <img src="https://picweb.blackyak.com/workbook/2025_BY/ABYSHXU927_GR/ABYSHXU927_GR_WMain_view_860_FRONT.jpg" alt="제품">
+                        <h4>343 라이트 스텝 GTX</h4>
+                        <p>219,000</p>
+                    </a>
+                </div>
+
+                <div class="con_4">
+                    <a href="#">
+                        <img src="https://picweb.blackyak.com/workbook/2025_BY/ABYSHXU927_GR/ABYSHXU927_GR_WMain_view_860_FRONT.jpg" alt="제품">
+                        <h4>343 라이트 스텝 GTX</h4>
+                        <p>219,000</p>
+                    </a>
+                </div>
+
+                <div class="con_4">
+                    <a href="#">
+                        <img src="https://picweb.blackyak.com/workbook/2025_BY/ABYSHXU927_GR/ABYSHXU927_GR_WMain_view_860_FRONT.jpg" alt="제품">
+                        <h4>343 라이트 스텝 GTX</h4>
+                        <p>219,000</p>
+                    </a>
+                </div>
+
+                <div class="con_4">
+                    <a href="#">
+                        <img src="https://picweb.blackyak.com/workbook/2025_BY/ABYSHXU927_GR/ABYSHXU927_GR_WMain_view_860_FRONT.jpg" alt="제품">
+                        <h4>343 라이트 스텝 GTX</h4>
+                        <p>219,000</p>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="con_wrap_4">
+
+                <div class="con_4">
+                    <a href="#">
+                        <img src="https://picweb.blackyak.com/workbook/2025_BY/ABYSHXU927_GR/ABYSHXU927_GR_WMain_view_860_FRONT.jpg" alt="제품">
+                        <h4>343 라이트 스텝 GTX</h4>
+                        <p>219,000</p>
+                    </a>
+                </div>
+
+                <div class="con_4">
+                    <a href="#">
+                        <img src="https://picweb.blackyak.com/workbook/2025_BY/ABYSHXU927_GR/ABYSHXU927_GR_WMain_view_860_FRONT.jpg" alt="제품">
+                        <h4>343 라이트 스텝 GTX</h4>
+                        <p>219,000</p>
+                    </a>
+                </div>
+
+                <div class="con_4">
+                    <a href="#">
+                        <img src="https://picweb.blackyak.com/workbook/2025_BY/ABYSHXU927_GR/ABYSHXU927_GR_WMain_view_860_FRONT.jpg" alt="제품">
+                        <h4>343 라이트 스텝 GTX</h4>
+                        <p>219,000</p>
+                    </a>
+                </div>
+
+                <div class="con_4">
+                    <a href="#">
+                        <img src="https://picweb.blackyak.com/workbook/2025_BY/ABYSHXU927_GR/ABYSHXU927_GR_WMain_view_860_FRONT.jpg" alt="제품">
+                        <h4>343 라이트 스텝 GTX</h4>
+                        <p>219,000</p>
+                    </a>
+                </div>
+
+                <div class="con_4">
+                    <a href="#">
+                        <img src="https://picweb.blackyak.com/workbook/2025_BY/ABYSHXU927_GR/ABYSHXU927_GR_WMain_view_860_FRONT.jpg" alt="제품">
+                        <h4>343 라이트 스텝 GTX</h4>
+                        <p>219,000</p>
+                    </a>
+                </div>
+
+                <div class="con_4">
+                    <a href="#">
+                        <img src="https://picweb.blackyak.com/workbook/2025_BY/ABYSHXU927_GR/ABYSHXU927_GR_WMain_view_860_FRONT.jpg" alt="제품">
+                        <h4>343 라이트 스텝 GTX</h4>
+                        <p>219,000</p>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+</html>
+
+<!-- https://www.byn.kr/blackyak -->

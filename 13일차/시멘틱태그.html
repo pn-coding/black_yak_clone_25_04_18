@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            padding: 25px 150px;
+            height: 80px;
+        }
+
+        .logo{
+            font-size: 20px;
+            font-weight: 900;
+            float: left;
+        }
+
+        nav{
+            float: right;
+        }
+
+        .menu{
+            float: left;
+            font-size: 18px;
+            margin-left: 100px;
+        }
+
+        .section_1{
+            height: 900px;
+            background-color: lightgray;
+            background-image: url(img/section_1_bg.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .section_2{
+            padding: 150px;
+        }
+
+        .title{
+            font-size: 50px;
+            font-weight: 900;
+            text-align: center;
+        }
+
+        .con_wrap{
+            height: 500px;
+            margin-top: 20px;
+        }
+
+        .con{
+            width: 515px;
+            height: 100%;
+            background-color: lightgray;
+            float: left;
+            margin-right: 30px;
+        }
+
+        .con:last-child{
+            margin-right: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="wrap">
+
+        <header>
+            
+            <div class="logo">LOGO</div>
+
+            <nav>
+                <div class="menu">Menu</div>
+                <div class="menu">Menu</div>
+                <div class="menu">Menu</div>
+                <div class="menu">Menu</div>
+            </nav>
+
+        </header>
+
+        <section class="section_1"></section>
+
+        <section class="section_2">
+            
+            <h2 class="title">Section title</h2>
+            <div class="con_wrap">
+                <div class="con"></div>
+                <div class="con"></div>
+                <div class="con"></div>
+            </div>
+
+        </section>
+
+    </div>
+    <!-- wrap end -->
+
+</body>
+</html>

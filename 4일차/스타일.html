@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 300vh;
+        }
+
+        /* *css 
+        =>html에 작성된 코드를 꾸며줌 
+        =>head 태그 내부에 style태그 작성하여 사용 
+        =>css는 선택자를 선택하고 스타일 지정함
+        =>코드가 끝날땐 반드시 ;(새미콜론)을 붙여줄것
+
+        *선택자
+        1.태그선택자
+        =>html의 태그를 선택함 
+        =>동일한 태그명을 다중 선택함 
+
+        2.클래스 선택자
+        =>태그에 클래스 속성을 지정하여 사용 
+        =>같은 클래스명은 같은 스타일이 적용됨
+
+        3.아이디 선택자
+        =>태그에 속성명으로 지정하여 사용
+        =>html 내부에 단 하나의 이름으로 존재해야되며 중복이름 불가  */
+
+        /* *class, id 선택자명 규칙
+        =>반드시 영어로 작성 
+        =>대소문자 구분하지 않으나 첫글자는 소문자로 시작 
+        =>특수문자는 _(언더바), -(하이픈)만 사용 가능 */
+        
+        div{
+            width: 300px;
+            height: 300px;
+            border-width: 10px;
+            border-color:lightcoral;
+            border-style: solid;
+        }
+
+        .box{
+            border-color: blue;
+        }
+
+        h2{
+            width: 500px;
+            height: 100px;
+            border-width: 10px;
+            /* =>테두리 두께 */
+
+            border-style: dotted;
+            /* =>테두리 종류(dotted는 점선) */
+
+            border-color: teal;
+            /* =>테두리 색상, 영문법, rgb, 16진수 표기 가능 */
+        }
+
+        #box_2{
+            width: 500px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div></div>
+    <div id="box_2"></div>
+
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <h2 class="box"></h2>
+
+</body>
+</html>

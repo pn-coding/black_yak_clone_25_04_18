@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+
+        /* *다중선택
+        =>선택자를 선택할때 콤마를 이용하여 다중 선택할 수 있음 */
+
+        ul,li{
+            list-style: none;
+            /* =>ul태그의 리스트 점을 없애줌 */
+        }
+
+        .header{
+            /* *블럭요소는 가로값이 기본으로 가득 차있으므로 
+            width:100%는 생략 가능 */
+            height: 80px;
+            padding: 25px 150px;
+            border-bottom: 1px solid #dbdbdb;
+        }
+
+        .logo{
+            width: 150px;
+            font-size: 20px;
+            font-weight: 900;
+            float: left;
+        }
+
+        img{
+            width: 150px;
+        }
+
+        .menu_wrap{
+            float: right;
+        }
+
+        .menu{
+            float: left;
+            margin-left: 150px;
+            font-size: 18px;
+        }
+        /* header end */
+
+        .section{
+            height: 800px;
+            background-color: lightgray;
+        }
+
+        .title{
+            font-size: 80px;
+            font-weight: 900;
+            padding-top: 250px;
+            padding-left: 150px;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="header">
+
+        <div class="logo">
+            <a href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png" alt="logo">
+            </a>
+        </div>
+
+        <ul class="menu_wrap">
+            <li class="menu">
+                <a href="#">HOME</a>
+            </li>
+            <li class="menu">
+                <a href="#">INTRO</a>
+            </li>
+            <li class="menu">
+                <a href="#">PRODUCT</a>
+            </li>
+            <li class="menu">
+                <a href="#">PROJECT</a>
+            </li>
+        </ul>
+
+    </div>
+    <!-- header end -->
+
+    <div class="section">
+        <h2 class="title">
+            Section title
+        </h2>
+    </div>
+
+</body>
+</html>
+
